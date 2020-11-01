@@ -1,0 +1,147 @@
+object Options: TOptions
+  Left = 493
+  Height = 297
+  Top = 182
+  Width = 320
+  Caption = 'Настройки'
+  ClientHeight = 297
+  ClientWidth = 320
+  OnCreate = FormCreate
+  ShowHint = True
+  LCLVersion = '2.0.10.0'
+  object ButtonCancel: TButton
+    Left = 120
+    Height = 25
+    Hint = 'Щракнете за да затворите'
+    Top = 224
+    Width = 75
+    Cancel = True
+    Caption = 'Готово'
+    Default = True
+    OnClick = ButtonCancelClick
+    TabOrder = 0
+  end
+  object CheckGroup1: TCheckGroup
+    Left = 120
+    Height = 103
+    Top = 22
+    Width = 73
+    AutoFill = True
+    Caption = 'Действия'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 84
+    ClientWidth = 63
+    Items.Strings = (
+      '+'
+      '-'
+      '*'
+      '/'
+    )
+    TabOrder = 1
+    Data = {
+      0400000003020202
+    }
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 16
+    Top = 22
+    Width = 66
+    Caption = 'Операнд 1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 216
+    Height = 16
+    Top = 22
+    Width = 67
+    Caption = 'Операнд 2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 16
+    Top = 52
+    Width = 21
+    Caption = 'От'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 16
+    Top = 82
+    Width = 17
+    Caption = 'До'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 216
+    Height = 16
+    Top = 52
+    Width = 21
+    Caption = 'От'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 216
+    Height = 16
+    Top = 82
+    Width = 17
+    Caption = 'До'
+    ParentColor = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 30
+    Height = 18
+    Hint = 'Поставете отметката за да бъде първото число винаги по-голямо от второто'
+    Top = 135
+    Width = 168
+    Caption = 'Операнд 1  >  Операнд 2'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 53
+    Height = 22
+    Top = 50
+    Width = 44
+    Alignment = taCenter
+    TabOrder = 3
+    Text = '1'
+  end
+  object Edit2: TEdit
+    Left = 53
+    Height = 22
+    Top = 78
+    Width = 44
+    Alignment = taCenter
+    TabOrder = 4
+    Text = '5'
+  end
+  object Edit3: TEdit
+    Left = 248
+    Height = 22
+    Top = 52
+    Width = 44
+    Alignment = taCenter
+    TabOrder = 5
+    Text = '1'
+  end
+  object Edit4: TEdit
+    Left = 248
+    Height = 22
+    Top = 80
+    Width = 44
+    Alignment = taCenter
+    TabOrder = 6
+    Text = '5'
+  end
+end
