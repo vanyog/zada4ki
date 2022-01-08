@@ -1,7 +1,7 @@
 object Options: TOptions
-  Left = 493
+  Left = 189
   Height = 297
-  Top = 182
+  Top = 146
   Width = 320
   Caption = 'Настройки'
   ClientHeight = 297
@@ -42,11 +42,12 @@ object Options: TOptions
       '+'
       '-'
       '*'
-      '/'
+      ':'
     )
+    OnClick = CheckGroup1Click
     TabOrder = 1
     Data = {
-      0400000003020202
+      0400000002020202
     }
   end
   object Label1: TLabel
@@ -102,7 +103,7 @@ object Options: TOptions
     Height = 18
     Hint = 'Поставете отметката за да бъде първото число винаги по-голямо от второто'
     Top = 135
-    Width = 168
+    Width = 172
     Caption = 'Операнд 1  >  Операнд 2'
     ParentShowHint = False
     ShowHint = True

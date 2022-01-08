@@ -136,7 +136,7 @@ begin
    '+': C := A + B;
    '-': C := A - B;
    '*': C := A * B;
-   '/': C := A div B;
+   ':': C := A div B;
    else
      C := 0;
    end;

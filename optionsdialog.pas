@@ -27,6 +27,7 @@ type
     Label5: TLabel;
     Label6: TLabel;
     procedure ButtonCancelClick(Sender: TObject);
+    procedure CheckGroup1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     function getMin1:integer;
@@ -112,6 +113,11 @@ begin
   end;
   saveOptions;
   Close;
+end;
+
+procedure TOptions.CheckGroup1Click(Sender: TObject);
+begin
+
 end;
 
 function TOptions.noOperation:boolean;
