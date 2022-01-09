@@ -1,14 +1,14 @@
 object Options: TOptions
-  Left = 189
+  Left = 376
   Height = 297
-  Top = 146
+  Top = 156
   Width = 320
   Caption = 'Настройки'
   ClientHeight = 297
   ClientWidth = 320
   OnCreate = FormCreate
   ShowHint = True
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.2.0.4'
   object ButtonCancel: TButton
     Left = 120
     Height = 25
@@ -36,15 +36,14 @@ object Options: TOptions
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 84
-    ClientWidth = 63
+    ClientHeight = 83
+    ClientWidth = 69
     Items.Strings = (
       '+'
       '-'
       '*'
       ':'
     )
-    OnClick = CheckGroup1Click
     TabOrder = 1
     Data = {
       0400000002020202
@@ -52,58 +51,52 @@ object Options: TOptions
   end
   object Label1: TLabel
     Left = 24
-    Height = 16
+    Height = 15
     Top = 22
-    Width = 66
+    Width = 57
     Caption = 'Операнд 1'
-    ParentColor = False
   end
   object Label2: TLabel
     Left = 216
-    Height = 16
+    Height = 15
     Top = 22
-    Width = 67
+    Width = 57
     Caption = 'Операнд 2'
-    ParentColor = False
   end
   object Label3: TLabel
     Left = 24
-    Height = 16
+    Height = 15
     Top = 52
-    Width = 21
+    Width = 14
     Caption = 'От'
-    ParentColor = False
   end
   object Label4: TLabel
     Left = 24
-    Height = 16
+    Height = 15
     Top = 82
-    Width = 17
+    Width = 15
     Caption = 'До'
-    ParentColor = False
   end
   object Label5: TLabel
     Left = 216
-    Height = 16
+    Height = 15
     Top = 52
-    Width = 21
+    Width = 14
     Caption = 'От'
-    ParentColor = False
   end
   object Label6: TLabel
     Left = 216
-    Height = 16
+    Height = 15
     Top = 82
-    Width = 17
+    Width = 15
     Caption = 'До'
-    ParentColor = False
   end
   object CheckBox1: TCheckBox
     Left = 30
-    Height = 18
+    Height = 19
     Hint = 'Поставете отметката за да бъде първото число винаги по-голямо от второто'
     Top = 135
-    Width = 172
+    Width = 154
     Caption = 'Операнд 1  >  Операнд 2'
     ParentShowHint = False
     ShowHint = True
@@ -111,7 +104,7 @@ object Options: TOptions
   end
   object Edit1: TEdit
     Left = 53
-    Height = 22
+    Height = 23
     Top = 50
     Width = 44
     Alignment = taCenter
@@ -120,7 +113,7 @@ object Options: TOptions
   end
   object Edit2: TEdit
     Left = 53
-    Height = 22
+    Height = 23
     Top = 78
     Width = 44
     Alignment = taCenter
@@ -129,7 +122,7 @@ object Options: TOptions
   end
   object Edit3: TEdit
     Left = 248
-    Height = 22
+    Height = 23
     Top = 52
     Width = 44
     Alignment = taCenter
@@ -138,7 +131,7 @@ object Options: TOptions
   end
   object Edit4: TEdit
     Left = 248
-    Height = 22
+    Height = 23
     Top = 80
     Width = 44
     Alignment = taCenter

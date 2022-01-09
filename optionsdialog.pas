@@ -27,7 +27,6 @@ type
     Label5: TLabel;
     Label6: TLabel;
     procedure ButtonCancelClick(Sender: TObject);
-    procedure CheckGroup1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     function getMin1:integer;
@@ -115,11 +114,6 @@ begin
   Close;
 end;
 
-procedure TOptions.CheckGroup1Click(Sender: TObject);
-begin
-
-end;
-
 function TOptions.noOperation:boolean;
 var i:integer;
 begin
@@ -133,7 +127,7 @@ procedure TOptions.FormCreate(Sender: TObject);
 var path:string;
 begin
   path := ExtractFilePath(Application.ExeName);
-  INIFile := TIniFile.Create(path + '/Zara4ki.ini');
+  INIFile := TIniFile.Create(path + '/Zada4ki.ini');
   Edit1.Text := INIFile.ReadString('Options', 'Min1', '1');
   Edit2.Text := INIFile.ReadString('Options', 'Max1', '5');
   Edit3.Text := INIFile.ReadString('Options', 'Min2', '1');
