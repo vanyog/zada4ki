@@ -49,7 +49,7 @@ type
 
   end;
 
-const version = '0.4';
+const version = '0.5';
 
 var
   Form1: TForm1;
@@ -120,8 +120,8 @@ begin
    inc(repetitions);
    Operation := Options.Operations[ 1 + Random(length(Options.Operations)) ];
    if Operation=':' then begin
-      C := Options.Min2 + Random(Options.Max2 - Options.Min2 + 1);
       B := Options.Min2 + Random(Options.Max2 - Options.Min2 + 1);
+      C := Options.Min1 + Random(Options.Max1 - Options.Min1 + 1);
       A := B * C;
    end
    else begin
